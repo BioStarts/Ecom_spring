@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>Spring MVC GeekApp</title>
+    </head>
+    <body>
+        <!--/*@thymesVar id="student" type="com.geekbrains.entities.Student"*/-->
+        <form th:action="@{/products/infoid}" method="GET">
+            ID product: <!--<input th:field="*{id}"/>/-->
+            <input type="text" name="id" placeholder="Введите id продукта"/>
+            <br>
+            <input type="submit" value="Submit" />
+        </form>
+        <a th:href="@{/}">на Главную страницу</a>
+    </body>
+</html>
